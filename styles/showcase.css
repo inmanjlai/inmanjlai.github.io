@@ -6,6 +6,10 @@
 
 #showcase h1 {
     font-size: 3rem;
+    padding: 1rem;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    /* max-width: max-content; */
 }
 
 #showcase div {
