@@ -85,4 +85,8 @@ form button {
     form input, form textarea, form button {
         width: 100%;
     }
+
+    .right h1 {
+        font-size: 2rem;
+    }
 }
