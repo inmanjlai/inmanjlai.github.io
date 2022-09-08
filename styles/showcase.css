@@ -1,0 +1,57 @@
+#showcase {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#showcase h1 {
+    font-size: 3rem;
+}
+
+#showcase div {
+    display: flex;
+    gap: 25px;
+}
+
+#showcase .resume-btn {
+    padding: 1rem;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: rgb(255, 196, 0);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#showcase .contact-btn {
+    padding: 1rem;
+    border: 2px solid black;
+    font-size: 16px;
+    font-weight: 600;
+    display: inline-flex;
+    justify-content: center;
+    border-radius: 5px;
+    align-items: center;
+}
+
+span {
+    padding-left: 10px;
+}
+
+@media screen and (max-width: 600px) {
+
+    #showcase h1 {
+        font-size: 2.2rem;
+    } 
+
+    #showcase .contact-btn {
+        width: 100%;
+    }
+
+    #showcase .resume-btn {
+        width: 100%;
+    }
+}

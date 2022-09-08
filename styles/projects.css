@@ -1,0 +1,56 @@
+#projects > div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#projects .project-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 2px solid rgb(44, 44, 44);
+    padding: 1rem;
+}
+
+#projects h3 {
+    font-weight: 400;
+    background-color: black;
+    color: white;
+    max-width: max-content;
+    padding: 1rem;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.links {
+    padding: 1rem 0;
+    margin-bottom: 10px;
+    align-self: flex-end;
+}
+
+#projects .links a {
+    background-color: rgb(255, 196, 0);
+    padding: 1rem;
+    max-width: max-content;
+    font-weight: 600;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#projects .links .live-btn {
+    background-color: rgb(134, 205, 134);
+}
+
+@media screen and (max-width: 600px) {
+
+    #projects {
+        padding: 2rem 1rem;
+    }
+
+    /* #projects .project-info {
+        border-left: none;
+        border-right: none;
+    } */
+
+}
+

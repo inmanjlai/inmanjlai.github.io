@@ -1,0 +1,66 @@
+#contact form{
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+}
+
+.right h2 {
+    margin-top: 2rem;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+/* form label {
+    background-color: black;
+    padding: 1rem;
+    color: white;
+    max-width: 100px;
+} */
+
+.status {
+    /* margin: 2rem; */
+    background-color: rgb(255, 196, 0);
+    /* padding: 1rem; */
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+form label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    border: 2px solid rgb(44, 44, 44);
+    font-size: 16px;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 500px;
+}
+
+form textarea {
+    height: 250px;
+    resize: none;
+}
+
+form button {
+    width: 500px;
+    background-color: black;
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    form input, form textarea, form button {
+        width: 100%;
+    }
+}

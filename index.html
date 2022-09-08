@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Ismail Manjlai's personal portfolio website.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ismail Manjlai • Portfolio</title>
+    <link rel="stylesheet" href="/styles/styles.css" defer>
+    <link rel="stylesheet" href="/styles/showcase.css" defer>
+    <link rel="stylesheet" href="/styles/projects.css" defer>
+    <link rel="stylesheet" href="/styles/contact.css" defer>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" defer/>
+</head>
+<body>
+    <!-- <nav>
+        <ul>
+            <a href="#showcase">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </ul>
+        <p>Currently working as a Software Test Engineer @ National Heritage Academies</p>
+    </nav> -->
+
+    <div class="body-container">
+        <div class="left">
+            <section id="showcase">
+                <h1>> Ismail Manjlai _</h1>
+                <h3>Software Engineer + Cat Dad</h3>
+                <div>
+                    <a href="resume.pdf" class="resume-btn" target="_blank">Resume<span class="material-symbols-outlined">file_download</span></a>
+                    <a href="https://github.com/ocahsa" class="contact-btn" target="_blank">GitHub</a>
+                </div>
+            </section>
+        
+            <h2>About</h2>
+            <section id="about">
+                <p>I am a Software Engineer with a passion for creating intuitive and visually pleasing web applications.Transitioning from working in a kitchen for 5 years, I've seen firsthand the difference that good communication and teamwork can make. I strive to bring those values to every team I work with.
+                <br>
+                <br>
+                In my free time I like working on janky game systems built in Godot, and coming up with even jankier decks for Magic: the Gathering. I’m currently working on a Magic: the Gathering deck builder based around data visualization to help people make better decks.</p>
+            </section>
+        
+            <h2>Projects</h2>
+            <section id="projects">
+                <div>
+                    <h3>Flask Starter Application</h3>
+                    <div class="project-info">
+            
+                        <p>The Flask Starter Application a github repository that allows people to quickly put together a <dfn title="Create, Read, Update, Delete">CRUD</dfn> application that uses Flask as a backend and serves server-side rendered dynamic pages. Using the <em>Posts</em> template feature provided within the repository, users can quickly spin up their own custom <dfn title="Create, Read, Update, Delete">CRUD</dfn> features incredibly fast.</p>
+            
+                        <p>This project serves mainly as a learning tool for people who are interested in getting into web development. The Flask Starter Application allows users to get used to a popular backend framework with as little boilerplate code as possible, with an example feature built out for them to look at as they build their own.</p>
+            
+                        <p>Technologies used: Python, Flask, SQLAlchemy, SQLite, HTML, CSS, Jinja</p>
+            
+                    </div>
+                    <div class="links">
+                        <a href="https://github.com/ocahsa/flask_starter" target="_blank">GitHub</a>
+                    </div>
+
+                    <h3>Kilogram</h3>
+                    <div class="project-info">
+            
+                        <p>Kilogram is a full-stack web application built through the collaborative efforts of four software engineers. It is a pixel-perfect clone of the infamous social media platform Instagram. The app allows users to upload media that can be organized by hashtags. User's posts can be shared publicly or with pre-approved followers. Users can also browse other users' content by tags. Lastly, users can like photos and follow other users to add their content to a personal feed.</p>
+            
+                        <p>I worked on Kilogram with Basel Hassan, Pawan Chahal, and Michael Eng. Built with JavaScript and Python, this web application uses React / Redux for the frontend and Flask for the backend, with SQLAlchemy as the ORM communicating with a PostgreSQL database. It also utilizes AWS to host images.</p>
+            
+                        <p>Technologies used: JavaScript, React, Redux, Python, Flask, SQLAlchemy, PostgreSQL, HTML, CSS, AWS</p>
+            
+                    </div>
+                    <div class="links">
+                        <a href="https://inmanjlai-kilogram.herokuapp.com/" target="_blank">Live</a>
+                        <a href="https://github.com/ocahsa/instagramClone" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    
+        <div class="right">
+
+            <h2>Contact</h2>
+            <section id="contact">
+                <form
+                    action="https://formspree.io/f/mleayopr"
+                    method="POST"
+                >
+                    <div>
+                        <label>Name</label>
+                        <input type="text" name="name">
+                    </div>
+                    <div>
+                        <label>Email</label>
+                        <input type="email" name="email">
+                    </div>
+                    <div>
+                        <label>Message</label>
+                        <textarea name="message"></textarea>
+                    </div>
+                    <button type="submit">Send</button>
+                </form>
+                <div>
+        
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+</body>
+</html>
