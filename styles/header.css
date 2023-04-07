@@ -1,0 +1,103 @@
+header {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 25px 25px 50px 25px;
+    background-color: white;
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-weight: 500;
+}
+
+header h2 {
+    font-weight: 300;
+}
+
+header h2 span:hover {
+    color: #66A5AA;
+    transition: color 0.2s ease-in-out;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+nav button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px 15px;
+    border: 2px solid #66A5AA;
+    background-color: transparent;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #66A5AA;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    cursor: pointer;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+nav button:hover {
+    background-color: #66A5AA;
+    color: white;
+}
+
+.img-container {
+    height: 100%;
+    max-height: 500px;
+    width: max-content;
+    object-fit: cover;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.img-container img {
+    height: 100%;
+    width: auto;
+}
+
+.down-arrow {
+    margin-top: 10px;
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.down-arrow:hover {
+    color: #66A5AA;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+    to {
+        transform: translateY(0px);
+     }
+}
+
+@media screen and (max-width: 600px) {
+    .img-container {
+        max-height: 200px;
+    }
+
+    header {
+        width: 100%;
+    }
+}
