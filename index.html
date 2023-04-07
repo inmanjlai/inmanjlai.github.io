@@ -7,72 +7,46 @@
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/section.css">
+    <link rel="stylesheet" href="./styles/menu.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <script src="./scripts/index.js" defer></script>
 </head>
 <body>
 	<header>
         <nav>
-            <button>Resume <span class="material-symbols-rounded">download</span></button>
-            <button>Say Hello <span class="material-symbols-rounded">mail</span></button>
+            <div>
+                <span class="material-symbols-outlined menu-btn">menu</span>
+                <div class="menu-container">
+                    <span class="material-symbols-outlined menu-btn-close">close</span>
+                    <div>
+                        <a href="/index.html">Home</a>
+                        <a href="./section.html">About</a>
+                        <a href="/projects.html">Projects</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button class="resume">Resume <span class="material-symbols-rounded">download</span></button>
+                <button class="contact">Say Hello <span class="material-symbols-rounded">mail</span></button>
+            </div>
         </nav>
         <h1>Ismail Manjlai</h1>
         <h2> <span>Software Engineer</span>, <span>Digital Artist</span> & <span>Cat Dad</span></h2>
         <div class="img-container">
             <img src="./avatar.png" alt="stylized image of Ismail Manjlai">
         </div>
-        <a href="#main"><span class="material-symbols-rounded down-arrow">keyboard_double_arrow_down</span></a>
+        <!-- <a href="#main"><span class="material-symbols-rounded down-arrow">keyboard_double_arrow_down</span></a> -->
         </header>
-	<section id="main">
-		<h2>About Me</h2>
-		<p>
-            Hi there, I'm Ismail Manjlai, a 24-year-old software engineer currently working as a Software Test Engineer at National Heritage Academies. I have a passion for creating innovative and effective solutions that make people's lives easier.
-        </p>
-        <p>
-            As a software engineer, I specialize in developing web applications using a variety of programming languages and frameworks. I am experienced in front-end development using HTML, CSS, and JavaScript, as well as back-end development using Node.js and Python. I also have experience with SQL and NoSQL databases, and I'm comfortable working with a variety of frameworks such as React, Angular and some fun ones like Alpine.js
-        </p>
-        <p>
-            In my current role at National Heritage Academies, I work on a team that develops and maintains a suite of web applications used by educators, administrators, and parents across the country. I'm proud to be part of a team that is making a positive impact on education in the United States.
-        </p>
-        <p>
-            When I'm not coding, you can usually find me reading a good book, doodling, or playing video games. I'm also a big fan of travel and have had the opportunity to visit some amazing places around the world.
-        </p>
-        <p>
-            If you'd like to learn more about my experience and skills, please take a look at my portfolio and feel free to reach out to me with any questions.</p>
-        </p>
-
-		<h2>Skills at a glance</h2>
-		<dl>
-            <dt>Front-end</dt>
-            <dd>HTML, CSS, JavaScript, React, Redux, Angular, Jinja2, Alpine.js, Pug.js</dd>
-            <dt>Back-end</dt>
-            <dd>Node.js, Express, Python, Flask</dd>
-            <dt>Database</dt>
-            <dd>SQL, PostgreSQL, MSSQL, Sqlite3, NoSQL, MongoDB</dd>
-            <dt>Other</dt>
-            <dd>Git, Docker</dd>
-        </dl>
-
-		<h2>Portfolio Projects</h2>
-		<ul>
-			<li><strong>Yu-Gi-Search:</strong> A web application that allows users to search for cards from the popular TCG Yu-Gi-Oh, as well as create decks, comment on cards and browse other user's created decks. Made with HTML, CSS, JavaScript, Python/Flask, utilizing the Jinja2 templating engine.</li>
-			<li><strong>Turtell:</strong> A Reddit clone built with minimal design in mind. Built using React/Redux and Python/Flask. Utilizing a PostgreSQL database linked with SQLAlchemy as the ORM.</li>
-			<li><strong>Kilogram:</strong> Kilogram is a full-stack Instagram clone built with JavaScript, React/Redux and Python/Flask. Allows users to upload and organize media by hashtags, and browse content from users they follow</li>
-		</ul>
-
-		<h2>Experience</h2>
-		<ul>
-            <li><strong>Software Test Engineer @ National Heritage Academies:</strong> Developed and maintained a suite of automated tests to ensure high quality coding practices, validation of data and proper implementation of business logic using tools such as Cypress and writing SQL queries for Microsoft SQL Server.</li>
-		</ul>
-
-	</section>
-	<footer>
-		<p>Feel free to reach out to me at <a href="mailto:inmanjlai.dev@gmail.com">inmanjlai.dev@gmail.com</a> or connect with me on <a href="https://LinkedIn.com/in/inmanjlai">LinkedIn</a>.</p>
-</footer>
+	
+	<footer class="circles-1">
+    </footer>
 
 </body>
 </html>
