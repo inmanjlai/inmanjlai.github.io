@@ -1,0 +1,250 @@
+*:not(dialog) {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+aside {
+    background-color: #37806a;
+    color: white;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    padding-top: 1rem;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav a {
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#home {
+    padding: 1rem;
+    color: #37806a;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+#home h1 {
+    font-size: 3rem;
+}
+
+#home h1 span {
+    color: #37806a90;
+}
+
+button {
+    background-color: #37806a30;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    color: #37806a;
+    padding: 0.75rem 1.25rem;
+    border: none;
+    border-radius: 5px;
+    width: max-content;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+button.call-to-action {
+    background-color: #37806a;
+    color: white;
+}
+
+#experience p {
+  max-width: 100ch;
+}
+
+section:not(#home) {
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 1rem;
+    border: 1px solid #b2d9cd;
+    display: flex;
+    flex-direction: column;
+    color: #37806a;
+    /* align-items: center; */
+    gap: 1rem;
+    background-color: #37806a08;
+}
+
+strong {
+    color: #37806a90;
+}
+
+section#projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 'title title title'
+    'project1 project2 project3';
+}
+
+#projects h2 {
+    grid-area: title;
+}
+
+#projects article {
+    position: relative;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid #b2d9cd;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* height: 100%; */
+}
+
+#projects article p {
+    flex-grow: 1;
+}
+
+#projects .buttons {
+    display: flex;
+}
+
+#projects .buttons a {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons button {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#projects h4 {
+    color: #37806a90;
+}
+
+section span {
+    color: #37806a90;
+    font-style: italic;
+}
+
+section#contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'left right';
+    gap: 2rem;
+}
+
+#contact h2 {
+    margin-bottom: 1rem;
+}
+
+#contact .left {
+    grid-area: left;
+}
+
+#contact .right {
+    grid-area: right;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.square-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid #b2d9cd;
+    color: #37806a;
+    flex-grow: 1;
+}
+
+.square-icon i {
+    font-size: 3rem;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+#contact form input, #contact form textarea {
+    padding: 0.5rem 1rem;
+    border: 1px solid #b2d9cd;
+    border-radius: 5px;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #37806a;
+}
+
+#contact ::placeholder {
+    color: #37806a90;
+}
+
+#contact form button {
+    align-self: end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.backdrop {
+    font-size: 10rem;
+    opacity: 0.1;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
