@@ -1,0 +1,80 @@
+#home {
+    opacity: 0;
+    animation: slide-in-fade 1s forwards;
+}
+
+#experience {
+    opacity: 0;
+    animation: slide-in-fade 1s forwards 0.25s;
+}
+
+#projects {
+    opacity: 0;
+    animation: slide-in-fade 1s forwards 0.5s;
+}
+
+#contact {
+    opacity: 0;
+    animation: slide-in-fade 1s forwards 0.75s;
+}
+
+@keyframes slide-in-fade {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    } to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#projects article {
+    transition: box-shadow 0.25s ease-out;
+}
+
+#projects article:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+#home button:hover {
+    background-color: #37806a50;
+}
+
+#home button.call-to-action:hover {
+    animation: bounce 1s infinite;
+    background-color: #37806a;
+}
+
+#home button.call-to-action:hover > i {
+    animation: ring 0.5s infinite;
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    } 
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes ring {
+    0% {
+        transform: rotate(0);
+    } 
+    25% {
+        transform: rotate(55deg);
+    }
+    50% {
+        transform: rotate(-15deg);
+    }
+    75% {
+        transform: rotate(55deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
