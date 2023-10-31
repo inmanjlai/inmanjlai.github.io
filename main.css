@@ -91,6 +91,7 @@ button {
     gap: 1rem;
 }
 
+
 button.call-to-action {
     background-color: #37806a;
     color: white;
@@ -250,7 +251,14 @@ section#contact {
     top: 10px;
 }
 
+@media screen and (max-width: 400px) {
+    #home .buttons i {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 900px) {
+
     main {
         width: 100%;
     }
@@ -276,5 +284,17 @@ section#contact {
     section#contact {
         display: flex;
         flex-direction: column;
+    }
+
+    .buttons {
+        width: 100%;
+    }
+    
+    .buttons a {
+        flex-grow: 1;
+    }
+
+    .buttons a button {
+        width: 100%;
     }
 }
