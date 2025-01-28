@@ -2,6 +2,10 @@ html {
     height: 100vh;
 }
 
+::selection {
+    background-color: #fdf05999;
+}
+
 body {
     display: flex;
     justify-content: center;
