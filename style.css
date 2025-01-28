@@ -1,0 +1,94 @@
+html {
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-family: "Poppins";
+}
+
+.job-short {
+    display: none;
+}
+
+main {
+    padding: 1rem;
+}
+
+#links {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    a {
+        display: flex;
+        gap: 0.25rem;
+        text-decoration: none;
+        color: inherit;
+        align-items: center;
+        
+        &:hover {
+            span {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 1.0;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #6f6b83;
+}
+
+.last-name {
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 5s ease-in-out infinite alternate;
+}
+
+@keyframes textShine {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    h1 {
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 1rem;
+    }
+    #links {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .job-short {
+        display: inline;
+    }
+    .job-full {
+        display: none;
+    }
+}
